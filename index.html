@@ -1,173 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamal Fahadh Mohamed | Strategic MarTech Advisor</title>
+    <title>Jamal Fahadh Mohamed | MarTech Strategy & Systems</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .headline-gradient { background: linear-gradient(90deg, #1e3a8a, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .page-section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 100px 0; border-bottom: 1px solid #e2e8f0; }
-        html { scroll-behavior: smooth; }
-        .hover-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .headline-gradient { 
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .card-hover { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .card-hover:hover { transform: translateY(-12px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+        .blob { position: absolute; width: 300px; height: 300px; background: #3b82f6; filter: blur(80px); opacity: 0.1; z-index: -1; border-radius: 50%; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans leading-relaxed">
+<body class="bg-[#fcfcfd] text-slate-900 overflow-x-hidden">
 
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur shadow-sm z-50">
+    <nav class="fixed top-0 w-full glass z-[100] border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-black tracking-tight uppercase">JAMAL <span class="text-blue-700">FAHADH</span></span>
-            <div class="hidden lg:flex space-x-6 text-[10px] uppercase font-bold tracking-widest">
-                <a href="#home" class="hover:text-blue-700 transition">Home</a>
-                <a href="#about" class="hover:text-blue-700 transition">About</a>
-                <a href="#services" class="hover:text-blue-700 transition">Services</a>
-                <a href="#case-studies" class="hover:text-blue-700 transition">Impact</a>
-                <a href="#certs" class="hover:text-blue-700 transition">Credentials</a>
-                <a href="#contact" class="bg-blue-700 text-white px-5 py-2 rounded-full hover:bg-blue-800 transition">Hire Me</a>
+            <span class="text-xl font-extrabold tracking-tighter uppercase">JAMAL <span class="text-blue-600">FAHADH</span></span>
+            <div class="hidden lg:flex items-center space-x-8 text-[11px] uppercase font-bold tracking-widest">
+                <a href="#about" class="hover:text-blue-600 transition">Strategy</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#case-studies" class="hover:text-blue-600 transition">Case Studies</a>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 shadow-lg shadow-blue-200 transition">Get a Consultation</a>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="page-section bg-white px-6">
-        <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">Helping businesses grow through <span class="headline-gradient">Digital Marketing & Strategy.</span></h1>
-            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">Strategic Systems Advisor & MarTech Expert bridging the gap between technical infrastructure and business growth.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#services" class="bg-slate-900 text-white px-10 py-4 rounded-full font-bold hover:shadow-lg transition">Explore Services</a>
-                <a href="#case-studies" class="border-2 border-slate-900 text-slate-900 px-10 py-4 rounded-full font-bold hover:bg-slate-900 hover:text-white transition">View Impact</a>
+    <section id="home" class="relative pt-32 pb-20 px-6 min-h-screen flex items-center overflow-hidden">
+        <div class="blob top-20 left-10"></div>
+        <div class="blob bottom-10 right-10 bg-purple-400"></div>
+        
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-blue-50 text-blue-600 rounded-full border border-blue-100" data-aos="fade-down">
+                Available for Q3 2026 Projects
+            </div>
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-8 leading-[1.1]" data-aos="fade-up" data-aos-delay="100">
+                Architecting <span class="headline-gradient">Digital Growth</span> for Somaliland's Leaders.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-500 mb-12 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                I help enterprise retail and educational institutions bridge the gap between complex technical infrastructure and high-converting marketing strategies.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5" data-aos="fade-up" data-aos-delay="300">
+                <a href="#contact" class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-blue-600 transition-all transform hover:scale-105 shadow-xl">Start Strategy Call</a>
+                <a href="#experience" class="bg-white border border-slate-200 text-slate-900 px-10 py-5 rounded-2xl font-bold hover:bg-slate-50 transition-all">View Career Path</a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="page-section px-6 bg-slate-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-16">
-                <div>
-                    <h2 class="text-3xl font-black mb-6 text-blue-800 uppercase tracking-tighter">The MarTech Philosophy</h2>
-                    <p class="text-lg text-slate-700 mb-6 italic">
-                        "I don't just manage social media; I build the technical infrastructure that makes marketing possible."
-                    </p>
-                    <p class="text-slate-600 mb-6 leading-relaxed">
-                        My career is defined by a transition from core technical maintenance to high-level strategic advisory. With a <strong>BBIT degree from JKUAT</strong>, I bridge the gap between IT and the boardroom, ensuring every marketing dollar spent is tracked through data analytics.
-                    </p>
+    <section id="about" class="py-24 px-6 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">The Philosophy</h2>
+                <h3 class="text-4xl font-extrabold mb-8 leading-tight text-slate-900">Systems over Stories. Data over Guesswork.</h3>
+                <p class="text-slate-600 text-lg mb-6">
+                    A <strong>BBIT degree from JKUAT</strong> provided the foundation, but the market taught me the strategy. I don't believe in "vanity metrics" like likes or follows unless they translate to bottom-line revenue.
+                </p>
+                <div class="grid grid-cols-2 gap-6 mt-10">
+                    <div class="p-4 border-l-2 border-blue-600 bg-slate-50">
+                        <p class="text-2xl font-black text-slate-900">JKUAT</p>
+                        <p class="text-xs uppercase font-bold text-slate-400">Technical Foundation</p>
+                    </div>
+                    <div class="p-4 border-l-2 border-blue-600 bg-slate-50">
+                        <p class="text-2xl font-black text-slate-900">MarTech</p>
+                        <p class="text-xs uppercase font-bold text-slate-400">Specialization</p>
+                    </div>
                 </div>
-                
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-                    <h2 class="text-3xl font-black mb-6">Why Hire Me?</h2>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-600"></i>
-                            <span class="text-lg"><i>Strong communication</i></span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-600"></i>
-                            <span class="text-lg"><i>Data-driven marketing</i></span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-600"></i>
-                            <span class="text-lg"><i>Ecommerce understanding</i></span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-600"></i>
-                            <span class="text-lg"><i>Social media growth</i></span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-600"></i>
-                            <span class="text-lg"><i>SEO optimization</i></span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-600"></i>
-                            <span class="text-lg"><i>Fast learner</i></span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-check-circle text-blue-600"></i>
-                            <span class="text-lg"><i>Team collaboration</i></span>
-                        </li>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-4" data-aos="fade-left">
+                <div class="bg-slate-900 p-8 rounded-3xl text-white relative overflow-hidden">
+                    <i class="fas fa-quote-left absolute top-4 right-6 text-white/10 text-6xl"></i>
+                    <h4 class="text-xl font-bold mb-4">"I build the technical infrastructure that makes marketing possible."</h4>
+                    <p class="text-slate-400 text-sm italic">— Jamal Fahadh Mohamed</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-50 p-6 rounded-3xl border border-blue-100">
+                        <h5 class="font-bold text-blue-900 mb-1">Local Edge</h5>
+                        <p class="text-xs text-blue-700">Expertise in Zaad & e-Dahab API integrations.</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-3xl border border-green-100">
+                        <h5 class="font-bold text-green-900 mb-1">Scalability</h5>
+                        <p class="text-xs text-green-700">Systems built to handle 100k+ monthly visitors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-4xl font-black tracking-tight mb-4">Core Advisory Pillars</h2>
+                <p class="text-slate-500">Comprehensive solutions for the modern Somaliland digital economy.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-lg shadow-blue-200">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="font-black text-xl mb-4 uppercase">MarTech Stack Audit</h3>
+                    <ul class="text-slate-600 text-sm space-y-3">
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-blue-500"></i> CRM Implementation</li>
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-blue-500"></i> Marketing Automation</li>
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-blue-500"></i> Lead Tracking Systems</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-lg shadow-indigo-200">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="font-black text-xl mb-4 uppercase">E-Commerce Ops</h3>
+                    <ul class="text-slate-600 text-sm space-y-3">
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-indigo-500"></i> Shopify/WooCommerce Ops</li>
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-indigo-500"></i> Payment Gateway Setup</li>
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-indigo-500"></i> Inventory Syncing</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-lg shadow-emerald-200">
+                        <i class="fas fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="font-black text-xl mb-4 uppercase">Growth Analytics</h3>
+                    <ul class="text-slate-600 text-sm space-y-3">
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-emerald-500"></i> GA4 Implementation</li>
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-emerald-500"></i> Search Engine Dominance</li>
+                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-emerald-500"></i> Conversion Rate Optimization</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="page-section px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-black mb-12 text-center uppercase tracking-tighter">Strategic Services</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 border rounded-3xl bg-slate-50 hover-card">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-6 text-xl">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-4">Digital Marketing</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Omnichannel growth across Facebook, Instagram, and TikTok with a deep focus on Somali consumer behavior and storytelling.</p>
-                </div>
-                <div class="p-8 border rounded-3xl bg-slate-50 hover-card">
-                    <div class="w-12 h-12 bg-green-100 text-green-700 rounded-xl flex items-center justify-center mb-6 text-xl">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-4">Systems Advisory</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">E-commerce integration with Zaad/e-Dahab and digital transformation consulting for established retail businesses.</p>
-                </div>
-                <div class="p-8 border rounded-3xl bg-slate-50 hover-card">
-                    <div class="w-12 h-12 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center mb-6 text-xl">
-                        <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-4">SEO & Data</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Technical SEO to dominate local search markets and Google Analytics 4 (GA4) setup for precise ROI tracking.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="case-studies" class="page-section px-6 bg-slate-900 text-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-black mb-16 italic">Measurable Results</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="p-8 border-l-4 border-blue-500 bg-white/5 rounded-r-2xl">
-                    <div class="text-6xl font-black text-blue-500 mb-4">40%</div>
-                    <h3 class="text-2xl font-bold mb-2">Elm High School Growth</h3>
-                    <p class="text-slate-400">Transformed educational marketing through video storytelling and automated parent engagement systems.</p>
-                </div>
-                <div class="p-8 border-l-4 border-green-500 bg-white/5 rounded-r-2xl">
-                    <div class="text-6xl font-black text-green-500 mb-4">25%</div>
-                    <h3 class="text-2xl font-bold mb-2">E-commerce Lead Gen</h3>
-                    <p class="text-slate-400">Integrated localized payment gateways resulting in a 25% increase in direct online sales inquiries.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certs" class="page-section px-6 bg-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-black mb-12 uppercase tracking-tighter">Credentials</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="group overflow-hidden rounded-2xl shadow-md border">
-                    <img src="cert4.jpg" alt="Degree Cert" class="h-72 w-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="p-4 bg-white font-bold text-sm">JKUAT - BBIT Honors</div>
-                </div>
-                <div class="group overflow-hidden rounded-2xl shadow-md border">
-                    <img src="Cert2.jpg" alt="Secondary Cert" class="h-72 w-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="p-4 bg-white font-bold text-sm">Professional Background</div>
-                </div>
-                <div class="group overflow-hidden rounded-2xl shadow-md border">
-                    <img src="Cert3.jpg" alt="Ecommerce Cert" class="h-72 w-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="p-4 bg-white font-bold text-sm">E-commerce Certification</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="py-24 px-6 bg-white text-center border-t">
+    <section id="experience" class="py-24 px-6 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-5xl font-black mb-6 leading-tight">Ready to build the future of Somaliland retail?</h2>
-            <p class="text-xl text-slate-500 mb-10">Strategic advisory for data-driven companies.</p>
-            <a href="mailto:jamalfahadhm@gmail.com" class="bg-blue-700 text-white px-12 py-4 rounded-full font-bold text-xl shadow-xl hover:bg-blue-800 transition inline-block">Work With Me</a>
-            <div class="mt-12 text-slate-400 text-sm font-medium uppercase tracking-widest">
-                <p>Hargeisa, Somaliland &bull; +252 (0) 636710907</p>
-                <p class="mt-4 opacity-50">&copy; 2026 Jamal Fahadh Mohamed</p>
+            <h2 class="text-4xl font-black text-center mb-16 uppercase tracking-tighter">Professional Journey</h2>
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-8 relative pb-12 border-l-2 border-slate-100 ml-4 md:ml-0 pl-8 md:pl-0" data-aos="fade-up">
+                    <div class="md:w-1/3 text-left md:text-right">
+                        <span class="text-blue-600 font-bold">2024 — Present</span>
+                        <h4 class="text-lg font-bold text-slate-900">Strategic Systems Advisor</h4>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-slate-600 leading-relaxed">Consulting for high-growth enterprises in Hargeisa. Implementing localized digital transformation strategies and high-level marketing automation.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 relative pb-12 border-l-2 border-slate-100 ml-4 md:ml-0 pl-8 md:pl-0" data-aos="fade-up">
+                    <div class="md:w-1/3 text-left md:text-right">
+                        <span class="text-slate-400 font-bold">2021 — 2024</span>
+                        <h4 class="text-lg font-bold text-slate-900">Technical Marketing Lead</h4>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-slate-600 leading-relaxed">Led digital growth initiatives for <strong>Elm High School</strong>. Orchestrated the transition from traditional to 100% digital parent-acquisition funnels.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
 
-</body>
-</html>
+    <section class="py-20 px-6 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-sm font-bold uppercase tracking-[0.3em] text-blue-400 mb-10">Powering My Strategy With</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 opacity-70">
+                <div class="flex flex-col items-center gap-3">
+                    <i class="fab fa-facebook text-4xl"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Meta Ads</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <i class="fab fa-google text-4xl"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Analytics 4</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <i class="fab fa-shopify text-4xl"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Shopify</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <i class="fab fa-python text-4xl"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Automation</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <i class="fas fa-envelope-open-text text-4xl"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">Mailchimp</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <i class="fab fa-wordpress text-4xl"></i>
+                    <span class="text-[10px] font-bold uppercase tracking-widest">WordPress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-studies" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black mb-16 italic text-center">Proof of Concept</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="group bg-white p-1 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500" data-aos="zoom-in">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="text-5xl font-black text-blue-600">40%</span>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Education Sector</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Elm High School Ecosystem</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Designed an automated engagement funnel that reduced manual administration by 60% and increased student inquiries significantly.</p>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] border px-2 py-1 rounded uppercase font-bold text-slate-400">SEO</span>
+                            <span class="text-[10px] border px-2 py-1 rounded uppercase font-bold text-slate-400">FB Ads</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-1 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <span class="text-5xl font-black text-emerald-600">2
