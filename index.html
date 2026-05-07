@@ -3,226 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamal Fahadh Mohamed | MarTech Strategy & Systems</title>
+    <title>Jamal Fahadh | Strategic MarTech Advisor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
         
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .headline-gradient { 
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-        }
-        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
-        .card-hover { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .card-hover:hover { transform: translateY(-12px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
-        .blob { position: absolute; width: 300px; height: 300px; background: #3b82f6; filter: blur(80px); opacity: 0.1; z-index: -1; border-radius: 50%; }
+        :root { --brand-blue: #2563eb; --brand-dark: #0f172a; }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        h1, h2, h3, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .hero-gradient { background: radial-gradient(circle at top right, #e0e7ff 0%, #f8fafc 50%); }
+        .text-gradient { background: linear-gradient(135deg, #1e293b 0%, #2563eb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .stat-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .stat-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1); }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 </head>
-<body class="bg-[#fcfcfd] text-slate-900 overflow-x-hidden">
+<body class="text-slate-900 selection:bg-blue-100 selection:text-blue-700">
 
-    <nav class="fixed top-0 w-full glass z-[100] border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-extrabold tracking-tighter uppercase">JAMAL <span class="text-blue-600">FAHADH</span></span>
-            <div class="hidden lg:flex items-center space-x-8 text-[11px] uppercase font-bold tracking-widest">
-                <a href="#about" class="hover:text-blue-600 transition">Strategy</a>
-                <a href="#services" class="hover:text-blue-600 transition">Services</a>
-                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
-                <a href="#case-studies" class="hover:text-blue-600 transition">Case Studies</a>
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 shadow-lg shadow-blue-200 transition">Get a Consultation</a>
+    <nav class="fixed top-0 w-full z-[100] glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="text-xl font-extrabold tracking-tighter flex items-center gap-2">
+                <span class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-xs">JF</span>
+                JAMAL<span class="text-blue-600">FAHADH</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-10">
+                <div class="flex gap-8 text-[12px] uppercase font-bold tracking-widest text-slate-500">
+                    <a href="#about" class="hover:text-blue-600 transition">Strategy</a>
+                    <a href="#services" class="hover:text-blue-600 transition">Solutions</a>
+                    <a href="#case-studies" class="hover:text-blue-600 transition">Impact</a>
+                </div>
+                <a href="#contact" class="bg-slate-900 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-blue-600 transition shadow-lg shadow-slate-200">
+                    Book Consultation
+                </a>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="relative pt-32 pb-20 px-6 min-h-screen flex items-center overflow-hidden">
-        <div class="blob top-20 left-10"></div>
-        <div class="blob bottom-10 right-10 bg-purple-400"></div>
-        
-        <div class="max-w-6xl mx-auto text-center">
-            <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-blue-50 text-blue-600 rounded-full border border-blue-100" data-aos="fade-down">
-                Available for Q3 2026 Projects
-            </div>
-            <h1 class="text-5xl md:text-8xl font-extrabold mb-8 leading-[1.1]" data-aos="fade-up" data-aos-delay="100">
-                Architecting <span class="headline-gradient">Digital Growth</span> for Somaliland's Leaders.
-            </h1>
-            <p class="text-lg md:text-xl text-slate-500 mb-12 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-                I help enterprise retail and educational institutions bridge the gap between complex technical infrastructure and high-converting marketing strategies.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="#contact" class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-blue-600 transition-all transform hover:scale-105 shadow-xl">Start Strategy Call</a>
-                <a href="#experience" class="bg-white border border-slate-200 text-slate-900 px-10 py-5 rounded-2xl font-bold hover:bg-slate-50 transition-all">View Career Path</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 px-6 bg-white border-y border-slate-100">
-        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-            <div data-aos="fade-right">
-                <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">The Philosophy</h2>
-                <h3 class="text-4xl font-extrabold mb-8 leading-tight text-slate-900">Systems over Stories. Data over Guesswork.</h3>
-                <p class="text-slate-600 text-lg mb-6">
-                    A <strong>BBIT degree from JKUAT</strong> provided the foundation, but the market taught me the strategy. I don't believe in "vanity metrics" like likes or follows unless they translate to bottom-line revenue.
+    <section class="relative pt-44 pb-32 px-6 hero-gradient overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col items-center text-center">
+                <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-xs font-bold mb-8 border border-blue-100 shadow-sm" data-aos="fade-down">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                    </span>
+                    Accepting Q3 Strategy Clients
+                </span>
+                
+                <h1 class="text-5xl md:text-8xl font-extrabold tracking-tight mb-8 leading-[1.05] text-slate-900" data-aos="fade-up">
+                    Scale Your Business <br> <span class="text-gradient">With Systems.</span>
+                </h1>
+                
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-12 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    I bridge the gap between technical infrastructure and business growth for Somaliland’s leading retail and educational institutions.
                 </p>
-                <div class="grid grid-cols-2 gap-6 mt-10">
-                    <div class="p-4 border-l-2 border-blue-600 bg-slate-50">
-                        <p class="text-2xl font-black text-slate-900">JKUAT</p>
-                        <p class="text-xs uppercase font-bold text-slate-400">Technical Foundation</p>
-                    </div>
-                    <div class="p-4 border-l-2 border-blue-600 bg-slate-50">
-                        <p class="text-2xl font-black text-slate-900">MarTech</p>
-                        <p class="text-xs uppercase font-bold text-slate-400">Specialization</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="grid grid-cols-1 gap-4" data-aos="fade-left">
-                <div class="bg-slate-900 p-8 rounded-3xl text-white relative overflow-hidden">
-                    <i class="fas fa-quote-left absolute top-4 right-6 text-white/10 text-6xl"></i>
-                    <h4 class="text-xl font-bold mb-4">"I build the technical infrastructure that makes marketing possible."</h4>
-                    <p class="text-slate-400 text-sm italic">— Jamal Fahadh Mohamed</p>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-blue-50 p-6 rounded-3xl border border-blue-100">
-                        <h5 class="font-bold text-blue-900 mb-1">Local Edge</h5>
-                        <p class="text-xs text-blue-700">Expertise in Zaad & e-Dahab API integrations.</p>
-                    </div>
-                    <div class="bg-green-50 p-6 rounded-3xl border border-green-100">
-                        <h5 class="font-bold text-green-900 mb-1">Scalability</h5>
-                        <p class="text-xs text-green-700">Systems built to handle 100k+ monthly visitors.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#contact" class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-blue-700 transition transform hover:scale-105 shadow-xl shadow-blue-200">
+                        View Solution Stack
+                    </a>
+                    <div class="flex items-center gap-4 px-6 py-4 bg-white rounded-2xl border border-slate-200">
+                        <div class="flex -space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-slate-200 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-blue-100 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-slate-300 border-2 border-white"></div>
+                        </div>
+                        <span class="text-sm font-bold text-slate-500">Trusted by 15+ Brands</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-24 px-6 bg-slate-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-20" data-aos="fade-up">
-                <h2 class="text-4xl font-black tracking-tight mb-4">Core Advisory Pillars</h2>
-                <p class="text-slate-500">Comprehensive solutions for the modern Somaliland digital economy.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-lg shadow-blue-200">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <h3 class="font-black text-xl mb-4 uppercase">MarTech Stack Audit</h3>
-                    <ul class="text-slate-600 text-sm space-y-3">
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-blue-500"></i> CRM Implementation</li>
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-blue-500"></i> Marketing Automation</li>
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-blue-500"></i> Lead Tracking Systems</li>
-                    </ul>
+    <section id="services" class="py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1" data-aos="fade-right">
+                    <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Core Expertise</h2>
+                    <h3 class="text-4xl font-extrabold text-slate-900 mb-8">Specialized MarTech Solutions.</h3>
+                    <p class="text-slate-500 leading-relaxed mb-8">
+                        I don't just manage platforms; I build the technical ecosystems that turn traffic into measurable revenue.
+                    </p>
+                    <a href="#experience" class="text-blue-600 font-bold flex items-center gap-2 group">
+                        See Professional History <i class="fas fa-arrow-right group-hover:translate-x-2 transition"></i>
+                    </a>
                 </div>
-
-                <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-14 h-14 bg-indigo-600 text-white rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-lg shadow-indigo-200">
-                        <i class="fas fa-shopping-cart"></i>
+                
+                <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 stat-card" data-aos="fade-up">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Systems Architecture</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">Full-stack CRM integration, ERP connectivity, and automated lead management systems tailored for local markets.</p>
                     </div>
-                    <h3 class="font-black text-xl mb-4 uppercase">E-Commerce Ops</h3>
-                    <ul class="text-slate-600 text-sm space-y-3">
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-indigo-500"></i> Shopify/WooCommerce Ops</li>
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-indigo-500"></i> Payment Gateway Setup</li>
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-indigo-500"></i> Inventory Syncing</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-10 rounded-[2.5rem] border border-slate-100 card-hover" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-8 text-2xl shadow-lg shadow-emerald-200">
-                        <i class="fas fa-magnifying-glass-chart"></i>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 stat-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Localized E-Commerce</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">Seamlessly integrating global platforms like Shopify with local payment gateways like Zaad and e-Dahab.</p>
                     </div>
-                    <h3 class="font-black text-xl mb-4 uppercase">Growth Analytics</h3>
-                    <ul class="text-slate-600 text-sm space-y-3">
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-emerald-500"></i> GA4 Implementation</li>
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-emerald-500"></i> Search Engine Dominance</li>
-                        <li class="flex items-center gap-2 font-medium"><i class="fas fa-check text-emerald-500"></i> Conversion Rate Optimization</li>
-                    </ul>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 stat-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Growth Analytics (GA4)</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">Stop guessing. I implement deep-event tracking so you know exactly where every dollar of ROI comes from.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-900 text-white stat-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-white mb-6">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-white">Custom Automation</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Replace manual tasks with Python-based automation and AI workflows to save your team 20+ hours weekly.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-24 px-6 bg-white">
+    <section id="case-studies" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-16 text-center">
+                <div data-aos="zoom-in">
+                    <div class="text-6xl font-extrabold text-blue-500 mb-2">40%</div>
+                    <div class="text-white font-bold uppercase tracking-widest text-xs">Efficiency Boost</div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-6xl font-extrabold text-emerald-500 mb-2">25%</div>
+                    <div class="text-white font-bold uppercase tracking-widest text-xs">Sales Increase</div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-6xl font-extrabold text-purple-500 mb-2">10k+</div>
+                    <div class="text-white font-bold uppercase tracking-widest text-xs">Leads Generated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-32 px-6 bg-slate-50">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-black text-center mb-16 uppercase tracking-tighter">Professional Journey</h2>
-            <div class="space-y-12">
-                <div class="flex flex-col md:flex-row gap-8 relative pb-12 border-l-2 border-slate-100 ml-4 md:ml-0 pl-8 md:pl-0" data-aos="fade-up">
-                    <div class="md:w-1/3 text-left md:text-right">
-                        <span class="text-blue-600 font-bold">2024 — Present</span>
-                        <h4 class="text-lg font-bold text-slate-900">Strategic Systems Advisor</h4>
+            <h2 class="text-4xl font-extrabold text-center mb-20">Strategic Career Path</h2>
+            <div class="space-y-16">
+                <div class="flex gap-8 group" data-aos="fade-up">
+                    <div class="flex flex-col items-center">
+                        <div class="w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100"></div>
+                        <div class="w-1 h-full bg-slate-200 mt-2"></div>
                     </div>
-                    <div class="md:w-2/3">
-                        <p class="text-slate-600 leading-relaxed">Consulting for high-growth enterprises in Hargeisa. Implementing localized digital transformation strategies and high-level marketing automation.</p>
+                    <div class="pb-8">
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">2024 — Present</span>
+                        <h4 class="text-2xl font-bold text-slate-900 mt-1 mb-3">Strategic Systems Advisor</h4>
+                        <p class="text-slate-500 leading-relaxed">Leading digital transformation for private enterprises in Somaliland. Focus on ROI-driven marketing infrastructure and ecommerce scalability.</p>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row gap-8 relative pb-12 border-l-2 border-slate-100 ml-4 md:ml-0 pl-8 md:pl-0" data-aos="fade-up">
-                    <div class="md:w-1/3 text-left md:text-right">
-                        <span class="text-slate-400 font-bold">2021 — 2024</span>
-                        <h4 class="text-lg font-bold text-slate-900">Technical Marketing Lead</h4>
+                <div class="flex gap-8 group" data-aos="fade-up">
+                    <div class="flex flex-col items-center">
+                        <div class="w-4 h-4 rounded-full bg-slate-300"></div>
+                        <div class="w-1 h-full bg-slate-200 mt-2"></div>
                     </div>
-                    <div class="md:w-2/3">
-                        <p class="text-slate-600 leading-relaxed">Led digital growth initiatives for <strong>Elm High School</strong>. Orchestrated the transition from traditional to 100% digital parent-acquisition funnels.</p>
+                    <div class="pb-8">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">2018 — 2024</span>
+                        <h4 class="text-2xl font-bold text-slate-900 mt-1 mb-3">ICT Lead & Network Admin</h4>
+                        <p class="text-slate-500 leading-relaxed">Implemented a digital Library Management System and moved all marketing funnels to a data-first approach, increasing student enrollment by 30%.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-slate-900 text-white">
-        <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-sm font-bold uppercase tracking-[0.3em] text-blue-400 mb-10">Powering My Strategy With</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 opacity-70">
-                <div class="flex flex-col items-center gap-3">
-                    <i class="fab fa-facebook text-4xl"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">Meta Ads</span>
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                    <i class="fab fa-google text-4xl"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">Analytics 4</span>
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                    <i class="fab fa-shopify text-4xl"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">Shopify</span>
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                    <i class="fab fa-python text-4xl"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">Automation</span>
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                    <i class="fas fa-envelope-open-text text-4xl"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">Mailchimp</span>
-                </div>
-                <div class="flex flex-col items-center gap-3">
-                    <i class="fab fa-wordpress text-4xl"></i>
-                    <span class="text-[10px] font-bold uppercase tracking-widest">WordPress</span>
-                </div>
+    <section class="py-32 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-center text-3xl font-extrabold mb-12">Consultation FAQ</h2>
+            <div class="space-y-4">
+                <details class="group p-6 border border-slate-100 rounded-2xl bg-slate-50 cursor-pointer transition">
+                    <summary class="font-bold flex justify-between items-center list-none text-slate-900">
+                        What is your "Systems-First" approach?
+                        <span class="group-open:rotate-180 transition text-blue-600"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-slate-500 text-sm mt-4 leading-relaxed">
+                        I focus on building the technical foundation—tracking, automation, and integrations—before launching campaigns. This ensures every cent spent is trackable and every lead is captured automatically.
+                    </p>
+                </details>
+                <details class="group p-6 border border-slate-100 rounded-2xl bg-slate-50 cursor-pointer transition">
+                    <summary class="font-bold flex justify-between items-center list-none text-slate-900">
+                        Do you work with international brands?
+                        <span class="group-open:rotate-180 transition text-blue-600"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-slate-500 text-sm mt-4 leading-relaxed">
+                        While I am based in Hargeisa, I provide remote strategy for brands across East Africa and the Middle East looking to optimize their MarTech stack.
+                    </p>
+                </details>
             </div>
         </div>
     </section>
 
-    <section id="case-studies" class="py-24 px-6 bg-slate-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-black mb-16 italic text-center">Proof of Concept</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="group bg-white p-1 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500" data-aos="zoom-in">
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <span class="text-5xl font-black text-blue-600">40%</span>
-                            <span class="bg-blue-50 text-blue-600 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Education Sector</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4">Elm High School Ecosystem</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Designed an automated engagement funnel that reduced manual administration by 60% and increased student inquiries significantly.</p>
-                        <div class="flex gap-2">
-                            <span class="text-[10px] border px-2 py-1 rounded uppercase font-bold text-slate-400">SEO</span>
-                            <span class="text-[10px] border px-2 py-1 rounded uppercase font-bold text-slate-400">FB Ads</span>
-                        </div>
+    <footer id="contact" class="py-32 px-6 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-10 leading-tight">Ready to Audit <br> Your <span class="text-blue-500">Growth Engine?</span></h2>
+            
+            <div class="flex flex-col items-center gap-8">
+                <a href="mailto:jamalfahadhm@gmail.com" class="group flex items-center gap-4 bg-white text-slate-900 px-12 py-6 rounded-2xl font-bold text-xl hover:bg-blue-600 hover:text-white transition-all shadow-2xl">
+                    Get in Touch <i class="fas fa-paper-plane transition group-hover:translate-x-2"></i>
+                </a>
+                
+                <div class="flex flex-wrap justify-center gap-10 mt-10">
+                    <div class="text-left">
+                        <p class="text-blue-500 text-[10px] font-bold uppercase tracking-widest mb-1">Direct Line</p>
+                        <p class="font-bold text-sm">+252 63 6710907</p>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-blue-500 text-[10px] font-bold uppercase tracking-widest mb-1">Headquarters</p>
+                        <p class="font-bold text-sm">Hargeisa, Somaliland</p>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-blue-500 text-[10px] font-bold uppercase tracking-widest mb-1">Availability</p>
+                        <p class="font-bold text-sm">Remote & On-Site</p>
                     </div>
                 </div>
+            </div>
+            
+            <p class="mt-24 text-[10px] text-white/30 uppercase tracking-[0.4em]">&copy; 2026 Jamal Fahadh Mohamed &bull; Systems Advisor</p>
+        </div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    </footer>
 
-                <div class="group bg-white p-1 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <span class="text-5xl font-black text-emerald-600">2
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+        
+        // Navigation Blur Effect on Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
